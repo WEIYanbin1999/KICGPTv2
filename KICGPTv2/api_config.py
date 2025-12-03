@@ -39,11 +39,6 @@ def configure_openai_api(api_key=None, api_base=None):
 
 
 def get_model_name(model=None):
-    """
-    Get the model name for API calls
-    
-    Default: Qwen/Qwen2.5-72B-Instruct as specified in reviewer requirements
-    """
     if model:
         return model
     elif os.getenv("OPENAI_MODEL"):
