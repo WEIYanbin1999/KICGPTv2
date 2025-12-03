@@ -6,8 +6,7 @@
 Official implementation of **KICGPTv2**, a framework that integrates Large Language Models with traditional Knowledge Graph Completion methods through in-context learning.
 
 > **Paper**: KICGPTv2: Large Language Model with Knowledge in Context for Knowledge Graph Completion  
-> **Authors**: Yanbin Wei, Qiushi Huang, James T. Kwok, Yu Zhang  
-> **Published in**: IEEE Transactions on Knowledge and Data Engineering (TKDE)  
+> **Authors**: Yanbin Wei, Qiushi Huang, James T. Kwok, Yu Zhang   
 > **Previous Version**: [EMNLP 2023](https://github.com/WEIYanbin1999/KICGPT)
 
 ---
