@@ -94,7 +94,7 @@ pyyaml>=6.0
 
 ### API Configuration
 
-KICGPTv2 uses **Qwen-2.5-72B** via OpenAI-compatible API:
+KICGPTv2 uses an OpenAI-compatible (three-party) API:
 
 ```bash
 # Set API key (choose one method)
@@ -287,57 +287,5 @@ All hyperparameters are disclosed in our paper's Appendix and configured in `KIC
 - **δ**: Number of demonstrations (δ = eff_demon_step)
 - **β**: Similarity threshold for reconstruction (default: 0.33)
 
-### LLM Configuration
-
-```yaml
-model: "Qwen/Qwen2.5-72B-Instruct"
-api_base: "https://api.pumpkinaigc.online/v1"
-temperature: 0
-max_tokens: 9600
-max_llm_input_tokens: 3750
-```
 
 
----
-
-## Citation
-
-If you use KICGPTv2 in your research, please cite:
-
-```bibtex
-@article{wei2024kicgptv2,
-  title={KICGPTv2: Large Language Model with Knowledge in Context for Knowledge Graph Completion},
-  author={Wei, Yanbin and Huang, Qiushi and Kwok, James T. and Zhang, Yu},
-  journal={IEEE Transactions on Knowledge and Data Engineering},
-  year={2024}
-}
-```
-
-**Previous Conference Version**:
-```bibtex
-@inproceedings{wei2023kicgpt,
-  title={KICGPT: Large Language Model with Knowledge in Context for Knowledge Graph Completion},
-  author={Wei, Yanbin and Huang, Qiushi and Kwok, James T. and Zhang, Yu},
-  booktitle={Proceedings of EMNLP 2023},
-  year={2023}
-}
-```
-
----
-
-## Contact
-
-- **Yanbin Wei**: yanbin.ust@gmail.com
-- **GitHub Issues**: [Create an issue](https://github.com/WEIYanbin1999/KICGPTv2/issues)
-
----
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-## Acknowledgments
-
-This research was supported by the Hong Kong University of Science and Technology and Southern University of Science and Technology. We thank the reviewers for their valuable feedback that improved the reproducibility of our work.
