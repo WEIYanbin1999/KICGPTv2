@@ -1,8 +1,8 @@
 # KICGPTv2 Configuration File
-# This file contains all hyperparameters and settings as disclosed in the manuscript and Appendix
+# This file contains all hyperparameters and settings
 
 # ============================================================================
-# LLM API Configuration (Reviewer Requirement)
+# LLM API Configuration
 # ============================================================================
 llm:
   model_name: "Qwen/Qwen2.5-72B-Instruct"  # Qwen-2.5-72B can be accessed via API
