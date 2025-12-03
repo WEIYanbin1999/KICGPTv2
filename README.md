@@ -288,4 +288,103 @@ All hyperparameters are disclosed in our paper's Appendix and configured in `KIC
 - **β**: Similarity threshold for reconstruction (default: 0.33)
 
 
+---
 
+## Reproducibility
+
+To ensure full reproducibility as promised to reviewers, we provide:
+
+### 1. Complete Source Code
+All Python scripts for:
+- Preprocessing (`entity_context_extraction.py`, `text_alignment_*.py`)
+- Task execution (`link_prediction.py`, `relation_prediction.py`, `triple_classification.py`)
+- Supporting modules (`get_demonstrations.py`, `prompt_selection.py`)
+
+### 2. Experiment Configurations
+
+**Environment** (`KICGPTv2/config.yaml`):
+- Python version: 3.8+
+- Dependencies with versions
+- LLM API settings
+
+**Hyperparameters** (as disclosed in Appendix B):
+- Link Prediction: m=30, δ=16, β=0.33
+- Relation Prediction: m=10, δ=8, β=0.33
+- Triple Classification: δ=32
+
+### 3. Prompt Templates
+
+All prompts are in `KICGPTv2/prompts/`:
+- `entity_context.json`: Entity description extraction
+- `link_prediction.json`: Link prediction prompts
+- `relation_prediction.json`: Relation prediction prompts
+- `triple_classification.json`: Triple classification prompts
+- `text_alignment.json`: Relation self-alignment prompts
+
+### 4. Step-by-Step Instructions
+
+See [Quick Start](#quick-start) section above.
+
+### 5. Dataset Links
+
+- **fb15k-237 & wn18rr**: [Download](https://github.com/villmow/datasets_knowledge_embedding)
+- **fb13 & umls**: Included in `datasets/`
+
+---
+
+## Advanced Usage
+
+### Multi-Process Execution
+
+For faster processing with multiple API keys:
+
+```bash
+# Create key file (one key per line)
+cat > api_keys.txt << EOF
+sk-key1xxxxx
+sk-key2xxxxx
+sk-key3xxxxx
+EOF
+
+# Run with parallel processes
+python link_prediction.py \
+    --dataset fb15k-237 \
+    --query tail \
+    --api_key api_keys.txt \
+    --num_process 3
+```
+
+### Debug Mode
+
+Test without API calls (manual input):
+```bash
+python link_prediction.py --dataset fb15k-237 --query tail --debug
+```
+
+Test with subset of data:
+```bash
+python link_prediction.py --dataset fb15k-237 --query tail \
+    --api_key YOUR_KEY --debug_online
+```
+
+### Ablation Studies
+
+**Disable entity contexts**:
+```bash
+python link_prediction.py --dataset fb15k-237 --query tail \
+    --api_key YOUR_KEY --use_relation_alignment --use_reconstruction
+```
+
+**Disable relation alignment**:
+```bash
+python link_prediction.py --dataset fb15k-237 --query tail \
+    --api_key YOUR_KEY --use_entity_context --use_reconstruction
+```
+
+**Disable reconstruction**:
+```bash
+python link_prediction.py --dataset fb15k-237 --query tail \
+    --api_key YOUR_KEY --use_entity_context --use_relation_alignment
+```
+
+---
