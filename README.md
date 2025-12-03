@@ -146,11 +146,7 @@ datasets/
 ```
 
 **Note**: Files marked with `[GENERATED]` are created during preprocessing (Steps 2-3 in Quick Start).
-│   └── demonstration/               # [Generated] Demonstration pools
-├── wn18rr/
-│   └── (similar structure)
-└── ...
-```
+
 
 ### Download Datasets
 
