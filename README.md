@@ -19,8 +19,6 @@ Official implementation of **KICGPTv2**, a framework that integrates Large Langu
 - [Quick Start](#quick-start)
 - [Hyperparameters](#hyperparameters)
 - [Reproducibility](#reproducibility)
-- [Citation](#citation)
-- [Contact](#contact)
 
 ---
 
