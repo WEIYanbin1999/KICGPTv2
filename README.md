@@ -152,11 +152,11 @@ datasets/
 
 All datasets must be downloaded separately:
 
-1. **fb15k-237**: [https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)
-2. **wn18rr**: [https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)
-3. **fb13**: [https://github.com/wangpf3/LLM-for-KGC](https://github.com/wangpf3/LLM-for-KGC)
-4. **umls**: [https://github.com/wangpf3/LLM-for-KGC](https://github.com/wangpf3/LLM-for-KGC)
-5. **wikidata5m**: [https://deepgraphlearning.github.io/project/wikidata5m](https://deepgraphlearning.github.io/project/wikidata5m)
+1. **fb15k-237**: [fb15k-237](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)
+2. **wn18rr**: [wn18rr](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)
+3. **fb13**: [fb13](https://github.com/Neph0s/LMKE/tree/main/data/FB13)
+4. **umls**: [umls](https://github.com/Neph0s/LMKE/tree/main/data/umls)
+5. **wikidata5m**: [wikidata5m](https://deepgraphlearning.github.io/project/wikidata5m)
 
 After downloading, place files in `datasets/{dataset_name}/` following the directory structure above.
 
