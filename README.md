@@ -327,8 +327,7 @@ See [Quick Start](#quick-start) section above.
 
 ### 5. Dataset Links
 
-- **fb15k-237 & wn18rr**: [Download](https://github.com/villmow/datasets_knowledge_embedding)
-- **fb13 & umls**: Included in `datasets/`
+Provided in [Download_Datasets](### Download Datasets)
 
 ---
 
