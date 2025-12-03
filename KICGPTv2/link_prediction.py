@@ -622,11 +622,3 @@ if __name__ == '__main__':
         p.join()
         print("All of the child processes over!")
         
-# Debug: 
-#       python3 link_prediction.py --dataset fb15k-237   --debug --query tail
-#       python3 link_prediction.py --dataset fb15k-237   --debug --query head
-#       python3 link_prediction.py --dataset fb15k-237   --debug --query tail
-#       python3 link_prediction.py --dataset fb15k-237   --debug --query head
-# debug_online: 
-#       python3 link_prediction.py --dataset fb15k-237 --debug_online --query tail
-#       python3 link_prediction.py --dataset fb15k-237 --debug_online --query head
