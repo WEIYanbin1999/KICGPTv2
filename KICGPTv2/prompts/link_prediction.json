@@ -1,0 +1,16 @@
+{
+    "chat": {
+    "init_query": "You are a knowledgeable assistant with a wide range of common sense understanding. Given a goal KG completion (link prediction) question and a list of candidate answers to this question, you need to order these candidate answers in the list to let candidate answers which are more possible to be the answer to the question prior. To sort the candidate answers, typically you would need to refer to some other examples that may be similar to or related to the question.",
+    "first_give_demonstration": "<The goal question>: Predict the [MASK] by completing the sentence \"{question}\" [MASK] should be: ? {entity_contexts}",
+    "analogy_demonstration": "<Analogy Example>: An example for analogy: {selected_analogy_demonstrations}",
+    "supplement_demonstration":"<Supplement Example> An example with supplement information: {selected_supplement_demonstrations}",
+    "final_query_template": "<Candidate Answer Ordering> The list of candidate answers is {order_of_candidate}. Here, we provide more information for these candidate answers to help you understand them better: {candidate_descriptions}\n\n<Reordering Candidate Answers> Now, based on the previous examples and your own knowledge and thinking, sort the list to let the candidate answers which are more possible to be the true answer to the question prior. Output the sorted order of candidate answers using the format \"[most possible answer | second possible answer | ... | least possible answer]\" and please think step by step and end your response with \"The final order:.\"",
+    "directly_ask":"The list of candidate answers is {order_of_candidate}. And the question is {question}. Now, based on the previous examples and your own knowledge and thinking, sort the list to let the candidate answers which are more possible to be the true answer of the question more prior. Output the sorted order of candidate answers using the format \"[most possible answer | second possible answer | ... | least possible answer]\" and please start your response with \"The final order:\". Do not output anything except the final order. Note your output sorted order should contain all the candidates in the list but not add new answer to it."
+    }
+    ,
+    "w/o_prompt_engineering": {
+        "analogy_demonstration":"{selected_analogy_demonstrations}",
+        "supplement_demonstration":"{selected_supplement_demonstrations}",
+        "final_query_template":"The list of candidate answers is {order_of_candidate}. And the question is {question}. Now, sort the list to let the candidate answers which are more possible to be the true answer of the question more prior. Output the sorted order of candidate answers using the format \"[most possible answer | second possible answer | ... | least possible answer]\" and please start your response with \"The final order:\". Do not output anything except the final order. Note your output sorted order should contain all the candidates in the list but not add new answer to it."
+    }
+}

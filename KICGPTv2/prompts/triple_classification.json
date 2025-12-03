@@ -1,0 +1,13 @@
+{
+    "chat": {
+        "init_query": "You are a knowledgeable assistant with a wide range of common sense understanding. You will be presented with a statement to evaluate, and you must indicate the likelihood of its truthfulness by ranking the answers \"Yes.\" and \"No.\" In case the statement is likely to be true, you should prioritize \"Yes.\" over \"No.\" and provide the ordered list [Yes | No]. Conversely, if the statement is more likely to be false, you should provide the list [No | Yes]. To complete this task effectively, you may need to consider related or similar known facts.",
+        
+        "statement_demonstration": "<The Statement for judging>: {statement} The judgment is: ? {entity_contexts}",
+        
+        "analogy_fact": "<Analogy Known Fact>: A fact for analogy: {analogy_facts}",
+        
+        "supplement_fact": "<Supplement Known Fact> A Fact with supplement information: {supplement_facts}",
+        
+        "final_judgment": "<Judging> Another expert has suggested that the judging result should be [Yes | No]. Now, considering the provided facts along with your own knowledge and reasoning, provide your judgment as either [Yes | No] (indicating the statement is more likely to be true) or [No, Yes] (indicating the statement is more likely to be false). Please think step by step and end your response with \"The final judgment:.\"."
+    }
+}

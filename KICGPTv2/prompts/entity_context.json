@@ -1,0 +1,9 @@
+{
+    "chat": {
+        "system_prompt": "You are a good assistant to reading, understanding and summarizing. Next, you need to analyze a paragraph, which is corresponding to the entity \"{entity}\", and extract 1) a brief description in a short sentence 2) the alias in your idea for it.",
+        
+        "corresponding_paragraph": "<Corresponding Paragraph> {paragraph}",
+        
+        "summarization_prompt": "<Summarization Prompt> Based on the above paragraph, please summarize the short description and the alias for the entity \"{entity}\" in format as [short description: a placeholder for a short sentence faithfully describe \"{entity}\"] and [aliases:{{, , ,}}]"
+    }
+}
