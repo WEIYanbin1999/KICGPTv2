@@ -53,7 +53,7 @@ class ChatGPT:
         while True:
             try:
                 res = openai.ChatCompletion.create(
-                    model="Qwen/Qwen2.5-72B-Instruct",  # Qwen-2.5-72B as per reviewer requirement
+                    model="Qwen/Qwen2.5-72B-Instruct",  
                     messages=messages,
                     temperature=0,
                     max_tokens=self.max_tokens,
