@@ -152,8 +152,8 @@ datasets/
 
 All datasets must be downloaded separately:
 
-1. **fb15k-237**: [fb15k-237](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)
-2. **wn18rr**: [wn18rr](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)
+1. **fb15k-237**: [fb15k-237](https://github.com/Neph0s/LMKE/tree/main/data/fb15k-237)
+2. **wn18rr**: [wn18rr](https://github.com/Neph0s/LMKE/tree/main/data/WN18RR)
 3. **fb13**: [fb13](https://github.com/Neph0s/LMKE/tree/main/data/FB13)
 4. **umls**: [umls](https://github.com/Neph0s/LMKE/tree/main/data/umls)
 5. **wikidata5m**: [wikidata5m](https://deepgraphlearning.github.io/project/wikidata5m)
